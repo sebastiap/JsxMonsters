@@ -13,7 +13,9 @@ A proyect to try Css and Jsx Libraries and tools while having fun
 
 ### React Concepts
 
-### algorithm Concepts
+### Algorithm Concepts
+
+### Cultural Concepts & References
 
 ### Other Concepts
 
