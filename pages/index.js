@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -49,15 +50,12 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
+          <Link href="/monsters/chaos"
           >
-            <h2>See Chaos</h2>
-            <p>
+            <a>
               See The first monster.
-            </p>
-          </a>
+            </a>
+          </Link>
         </div>
       </main>
 
