@@ -2,7 +2,8 @@ import Link from 'next/link'
 import styles from "./chaos.module.css";
 
 // Hash Map 
-var nums = [2,7,11,15];
+// What 2 numbers 
+var nums = [2,5,11,15,44,1,7];
 var target = 9
 
 var prevnums = []
@@ -19,18 +20,34 @@ var twoSum = function(nums, target) {
     return [-1,-1];
 };
 
+var detectValue = (value) => {
+
+  for (var i=0;i<nums.length;i++) {    
+    if (nums.i === value) {
+      return false;
+    }}
+}
+
+var dropValue = (value) => {
+
+  console.log(nums.filter(num => num === value));
+}
 
 
 function Chaos({ }) {
   return (
-    <div ClassName={styles.chaosglobal}>
-      {nums.map((post) => (
-        <div ClassName={styles.chaosmodule}  key={post.id}>
+    <div className={styles.chaosglobal}>
+      {nums.map((post,index) => (
+        <div className={`${styles.chaosmodule} ${styles.vibrate}`}  key={index}
+        onClick={() => dropValue(post)}>
           <Link href={`/blog/${encodeURIComponent(post.slug)}`}>
-            <a style={{color: 'red', textAlign: 'center'}}>{post}</a>
+            <a>{post}</a>
           </Link>
         </div>
       ))}
+      <div className={`${styles.chaosmodule} ${styles.vibrate}`} >
+        {twoSum(nums,target)}
+      </div>
     </div>
   )
 }
