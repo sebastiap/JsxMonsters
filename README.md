@@ -29,4 +29,19 @@ Each of the monsters is an individual proyect that allows to use libraries and c
 
 ## Current Monsters
 
-No Monsters at the time
+* Chaos Monster (Ugly Version)
+
+
+<!-- 
+Remember the npms :
+
+Font Awesome
+npm i --save @fortawesome/fontawesome-svg-core 
+
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/free-regular-svg-icons
+
+npm i --save @fortawesome/react-fontawesome@latest
+
+
+-->

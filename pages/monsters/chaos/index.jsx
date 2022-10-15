@@ -1,5 +1,19 @@
+
+// Next Route
 import Link from 'next/link'
+
+// React useState
+import {useState} from 'react'
+// FontAwesome styles
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
+// My own Components
+import Module from './Module'
+
+// My own styles
 import styles from "./chaos.module.css";
+
 
 // Hash Map 
 // What 2 numbers 
@@ -28,26 +42,38 @@ var detectValue = (value) => {
     }}
 }
 
-var dropValue = (value) => {
+function Chaos({ }) {
+const [hits,setHits] = useState(0);
+const [partStatus,setPartStatus] = useState(["fine"]);
 
+
+var dropValue = (value) => {
+  setHits(hits+1)
   console.log(nums.filter(num => num === value));
 }
 
-
-function Chaos({ }) {
   return (
     <div className={styles.chaosglobal}>
+    {hits >= 5? <div className={`${styles.chaosend} ${styles.vibrate}`}>"puf"</div> :
+
+<>
       {nums.map((post,index) => (
-        <div className={`${styles.chaosmodule} ${styles.vibrate}`}  key={index}
+        <Module
+        key={index}
+        content={post}
         onClick={() => dropValue(post)}>
-          <Link href={`/blog/${encodeURIComponent(post.slug)}`}>
-            <a>{post}</a>
-          </Link>
-        </div>
+          <FontAwesomeIcon icon="eye" />
+        </Module>
+
       ))}
-      <div className={`${styles.chaosmodule} ${styles.vibrate}`} >
-        {twoSum(nums,target)}
-      </div>
+      <Module content={twoSum(nums,target)} onClick={() => console.log("Missed Hit")}/>
+      </>
+    }
+    
+      The monster received {hits} hits so far ...
+
+
+
     </div>
   )
 }
