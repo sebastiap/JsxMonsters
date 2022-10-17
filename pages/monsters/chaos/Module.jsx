@@ -15,7 +15,7 @@ const [animated, setAnimated] = useState(false);
     onClick={() => setAnimated(() => true, props.onClick())}
     onAnimationEnd={() => setAnimated(() => false)}
     >
-      {props.content}
+      {/* {props.content} */}
       <FontAwesomeIcon icon={faEye} />
 
       </div>

@@ -24,6 +24,7 @@ transition-timing-function: ease-in-out;
   display:flex;
   align-items: center;
   justify-content: center;
+  font-size: 15rem;
 }
 
 .chaosmodule{
@@ -38,6 +39,7 @@ transition-timing-function: ease-in-out;
   display:flex;
   align-items: center;
   justify-content: center;
+  font-size: 10rem;
 }
 
 
@@ -89,7 +91,6 @@ transition-timing-function: ease-in-out;
   color: green;
   animation:hit 0.5s linear both;
   background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
- 
 }
 
 @keyframes hit{0%{transform:scale3d(1,1,1)}30%{transform:scale3d(.75,1.25,1)}40%{transform:scale3d(1.25,.75,1)}50%{transform:scale3d(.85,1.15,1)}65%{transform:scale3d(1.05,.95,1)}75%{transform:scale3d(.95,1.05,1)}100%{transform:scale3d(1,1,1)}}
