@@ -29,8 +29,8 @@ if (props.content != undefined) { for (var i = 0; i < props.content; i++) {
     onAnimationEnd={() => setAnimated(() => false)}
     >
       {/* {props.content} */}
-      {contenido.map(ojo => ojo)}
-      {/* <FontAwesomeIcon icon={faEye} /> */}
+      {/* {contenido.map(ojo => ojo)} */}
+      <FontAwesomeIcon icon={faEye} />
 
       </div>
   )

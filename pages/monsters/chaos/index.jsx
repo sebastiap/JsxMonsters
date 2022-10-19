@@ -4,9 +4,7 @@ import Link from 'next/link'
 
 // React useState
 import {useState} from 'react'
-// FontAwesome styles
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
 
 // My own Components
 import Module from './Module'
@@ -62,7 +60,7 @@ var dropValue = (value) => {
         key={index}
         content={post}
         onClick={() => dropValue(post)}>
-          <FontAwesomeIcon icon="eye" />
+       
         </Module>
 
       ))}

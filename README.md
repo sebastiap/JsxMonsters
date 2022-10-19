@@ -11,6 +11,10 @@ Each of the monsters is an individual proyect that allows to use libraries and c
 
 ## Sections
 
+## General Concepts
+
+* Next Routing with Pages (https://nextjs.org/docs/routing/introductionn)
+
 ## Monster Bio Example
 
 ### HTML Concepts
