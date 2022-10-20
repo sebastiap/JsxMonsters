@@ -1,16 +1,28 @@
 .chaosglobal{
 /* margin: 50px; */
-/* border: 1px solid red; */
-display:grid;
-/* grid-template-columns: 25% 25% 25% 25%; */
-grid-template-columns: [first] 25% [line2] auto [line3] auto [col4-start] 25%  [end];
-grid-gap:10px;
-margin-top:10px;
-height:100%;
+border: 1px solid red;
+display:flex;
+flex-direction: column;
+justify-content:space-between;
+align-items: center;
+margin:0;
+height: 900px;
+
 transition: all 1;
 transition-timing-function: ease-in-out;
+
 /* width:90%; */
 }
+
+.chaosgrid{
+  display:grid;
+  grid-template-columns: [first] 25% [line2] auto [line3] auto [col4-start] 25%  [end];
+  grid-gap:10px;
+  margin-top:10px;
+  width:100%;
+  font-size: 10rem;
+}
+
 
 .module{
   border: 1px solid #e5e5e5;
