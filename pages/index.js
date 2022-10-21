@@ -50,12 +50,14 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+          <div className={styles.grid}>
           <Link href="/monsters/chaos"
           >
             <a>
               See The first monster.
             </a>
           </Link>
+          </div>
         </div>
       </main>
 
