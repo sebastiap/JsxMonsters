@@ -12,28 +12,14 @@ Each of the monsters is an individual proyect that allows to use libraries and c
 ## Sections
 
 ## General Concepts
+* Next (https://nextjs.org/docs/getting-started)
+* Next Routing with Pages (https://nextjs.org/docs/routing/introduction)
 
-* Next Routing with Pages (https://nextjs.org/docs/routing/introductionn)
-
-## Monster Bio Example
-
-### HTML Concepts
-
-### CSS Concepts
-
-### JS Concepts
-
-### React Concepts
-
-### Algorithm Concepts
-
-### Cultural Concepts & References
-
-### Other Concepts
-
-## Current Monsters
-
+## Monster
 * Chaos Monster (Ugly Version)
+* Soluna Monster (Planified)
+* Octopus Monster (Planified)
+* Hook Monster (Planified)
 
 
 <!-- 

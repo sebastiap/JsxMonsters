@@ -7,6 +7,7 @@
  * Custom Animations (https://xsgames.co/animatiss/)
  * Gradients (https://cssgradient.io/gradient-backgrounds/)
  * CSS Grid (https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-properties)
+ 
 ### JS Concepts
  * Map 
  * Filter (Array.prototype.filter())
@@ -17,7 +18,7 @@
 ### Algorithm Concepts
  * Lowest Common Ancestor of a Binary Search Tree (https://www.youtube.com/watch?v=gs2LMfuOR9k)
  * Two-sum locator on an Array
- * shuffle an Array 
+ * Shuffle an Array 
  
 ### Cultural Concepts & References
 KHAOS (Chaos) was the first of the primordial gods (protogenoi) to emerge at the dawn of creation. Chaos the very first of all, the origin of everything, the empty, unfathomable space at the beginning of time.

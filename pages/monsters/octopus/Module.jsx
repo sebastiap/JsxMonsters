@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import {useState} from 'react'
-import styles from "./chaos.module.css";
+import styles from "./octopus.module.css";
 
 // FontAwesome styles
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

@@ -58,6 +58,14 @@ export default function Home() {
             </a>
           </Link>
           </div>
+          <div className={styles.grid}>
+          <Link href="/monsters/octopus"
+          >
+            <a>
+              See The Second monster.
+            </a>
+          </Link>
+          </div>
         </div>
       </main>
 

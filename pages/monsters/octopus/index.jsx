@@ -61,7 +61,7 @@ var detectValue = (value) => {
     }}
 }
 
-function Chaos({ }) {
+function Octopus({ }) {
 
   
 const [hits,setHits] = useState(0);
@@ -114,4 +114,4 @@ var replay = () => {setHits(0);shuffle(nums);weakpoints = twoSum(nums,target); }
   )
 }
 
-export default Chaos
+export default Octopus

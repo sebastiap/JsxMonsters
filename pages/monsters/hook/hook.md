@@ -1,7 +1,6 @@
 ## Hook Monster
 A hooked monster that do a lot of things.
 
-
 ### HTML Concepts
 
 ### CSS Concepts
@@ -26,7 +25,7 @@ A hooked monster that do a lot of things.
 ### Algorithm Concepts
  * Lowest Common Ancestor of a Binary Search Tree (https://www.youtube.com/watch?v=gs2LMfuOR9k)
  * Two-sum locator on an Array
- * shuffle an Array 
+ * Shuffle an Array 
  
 ### Cultural Concepts & References
 Marine Things 
