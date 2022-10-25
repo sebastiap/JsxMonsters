@@ -7,7 +7,7 @@ import {useState} from 'react'
 
 
 // My own Components
-import Module from './Module'
+import Module from '../../common/partModule'
 
 // My own styles
 import styles from "./octopus.module.css";

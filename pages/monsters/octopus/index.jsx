@@ -7,7 +7,7 @@ import {useState} from 'react'
 
 
 // My own Components
-import Module from './Module'
+import Module from '../../common/partModule'
 
 // My own styles
 import styles from "./octopus.module.css";
@@ -15,7 +15,7 @@ import styles from "./octopus.module.css";
 
 // Hash Map 
 // What 2 numbers 
-var originalnums = [2,5,11,15,44,1,7];
+var originalnums = [2,5,11,15,44,1,7,8];
 var target = 9
 
 var prevnums = []
@@ -80,12 +80,12 @@ var dropValue = (value) => {
 var replay = () => {setHits(0);shuffle(nums);weakpoints = twoSum(nums,target); }
 
   return (
-    <div className={styles.chaosglobal}>
-      <div className={styles.chaosgrid}>
+    <div className={styles.octopusglobal}>
+      <div className={styles.octopusgrid}>
         {hits >= 15? <div className={`${styles.chaosend} ${styles.vibrate}`}> <p> - </p> </div> :
 
     <>
-          {nums.map((post,index) => (
+          {/* {nums.map((post,index) => (
             <Module
             key={index}
             content={post}
@@ -94,8 +94,19 @@ var replay = () => {setHits(0);shuffle(nums);weakpoints = twoSum(nums,target); }
             </Module>
 
           ))}
-          <Module content={twoSum(nums,target)} onClick={() => console.log("Missed Hit")}/>
-          </>
+          <Module content={twoSum(nums,target)} onClick={() => console.log("Missed Hit")}/> */}
+          <Module content={1} onClick={() => console.log("Missed Hit")} className={styles.tentacleup}/>
+          <Module content={2} onClick={() => console.log("Missed Hit")} className={styles.tentacleup}/>
+          <Module content={3} onClick={() => console.log("Missed Hit")} className={styles.tentacleup}/>
+
+          <Module content={4} onClick={() => console.log("Missed Hit")} className={styles.tentaclerigth}/>
+          <Module content={"X"} onClick={() => console.log("Missed Hit")} className={styles.center} type="eye"/>
+          <Module content={5} onClick={() => console.log("Missed Hit")} className={styles.tentacleleft}/>
+
+          <Module content={6} onClick={() => console.log("Missed Hit")} className={styles.tentacledown}/>
+          <Module content={7} onClick={() => console.log("Missed Hit")} className={styles.tentacledown}/>
+          <Module content={8} onClick={() => console.log("Missed Hit")} className={styles.tentacledown}/>
+    </>
         }
       </div>
       

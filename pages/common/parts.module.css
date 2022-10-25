@@ -1,27 +1,4 @@
-.chaosglobal{
-/* margin: 50px; */
-border: 1px solid red;
-display:flex;
-flex-direction: column;
-justify-content:space-between;
-align-items: center;
-margin:0;
-height: 900px;
 
-transition: all 1;
-transition-timing-function: ease-in-out;
-
-/* width:90%; */
-}
-
-.chaosgrid{
-  display:grid;
-  grid-template-columns: [first] 25% [line2] auto [line3] auto [col4-start] 25%  [end];
-  grid-gap:10px;
-  margin-top:10px;
-  width:100%;
-  /* font-size: 10rem; */
-}
 
 
 .module{
@@ -39,7 +16,7 @@ transition-timing-function: ease-in-out;
   font-size: 15rem;
 }
 
-.chaosmodule{
+.partmodule{
   border: 1px solid #e5e5e5;
   border-radius: 90px;
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
@@ -51,26 +28,9 @@ transition-timing-function: ease-in-out;
   display:flex;
   align-items: center;
   justify-content: center;
-  /* font-size: 10rem; */
+  font-size: 15rem;
 }
 
-
-.chaosend{
-  border: 1px solid #e5e5e5;
-  border-radius: 90px;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-  background-blend-mode: multiply,multiply;
-  color: white;
-  text-align: 'center';
-  animation-delay: 3s;
-  height:300px;
-  width:auto;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  animation-name: example;
-  animation-duration: 4s;
-}
 
 @keyframes example {
   from {background-color: red;}
@@ -85,7 +45,7 @@ transition-timing-function: ease-in-out;
 ---------------------------------------------- */
 
 
-.chaosmodule:hover{
+.partmodule:hover{
   animation:vibrate 2.5s linear both;
   animation-iteration-count: infinite;
 } 

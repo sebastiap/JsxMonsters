@@ -1,0 +1,37 @@
+.octopusglobal{
+display:grid;
+
+}
+
+.octopusgrid{
+    display:grid;
+    grid-template-columns:  repeat(3,1fr);
+    grid-template-areas: "tentacleup tentacleup tentacleup"
+    "tentaclerigth eye tentacleleft" 
+    "tentacledown tentacledown tentacledown"
+    ;
+
+}
+
+.tentacleup{
+color:red;
+height:20px;
+grid-area: tentacleup;
+}
+
+.tentacleleft{
+    grid-area: tentacleleft;
+}
+
+.center{
+    font-size: 1px;
+    grid-area: eye;
+}
+
+.tentaclerigth{
+    grid-area: tentaclerigth;   
+}
+
+.tentacledown{
+    grid-area: tentacledown;
+}

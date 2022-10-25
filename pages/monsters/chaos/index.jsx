@@ -7,7 +7,7 @@ import {useState} from 'react'
 
 
 // My own Components
-import Module from './Module'
+import Module from '../../common/partModule'
 
 // My own styles
 import styles from "./chaos.module.css";
@@ -89,9 +89,11 @@ var replay = () => {setHits(0);shuffle(nums);weakpoints = twoSum(nums,target); }
             <Module
             key={index}
             content={post}
-            onClick={() => dropValue(index)}>
+            onClick={() => dropValue(index)}
+            type="eye"
+            />
           
-            </Module>
+       
 
           ))}
           <Module content={twoSum(nums,target)} onClick={() => console.log("Missed Hit")}/>
