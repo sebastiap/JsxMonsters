@@ -1,3 +1,42 @@
+.wait {
+  background: DARKBlue;
+  box-shadow: 0 0 1px rgba(0, 0, 139, 0.25);
+  width: 100px;
+  height: 80px;
+  color: #fff;
+}
+
+.attack {
+  background: DarkRed;
+  box-shadow: 0 0 1px rgba(139, 0, 0, 0.25);
+  width: 100px;
+  height: 80px;
+  color: #fff;
+}
+
+.retreat {
+  background: DarkGreen;
+  box-shadow: 0 0 1px rgba(0, 100, 0, 0.25);
+  width: 100px;
+  height: 80px;
+  color: #fff;
+}
+
+.sassglobal {
+  background: black;
+}
+
+.textdisplay {
+  background: #222;
+  color: #fff;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -14,7 +53,13 @@
 }
 
 .grid:nth-child(2) span {
-  color: purple;
+  color: brown;
+  box-shadow: inset 5px 5px 8px white;
+}
+
+.grid:nth-child(2) span:nth-child(2) {
+  color: brown;
+  box-shadow: inset -5px 5px 8px white;
 }
 
 .grid:nth-child(3) span {
@@ -36,6 +81,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.span:hover {
+  border: 2px solid violet;
+  border-radius: 4px;
+  min-height: 15vh;
+  padding: 1rem;
+  color: violet;
+  font-size: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=sassquatch.module.css.map */

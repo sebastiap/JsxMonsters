@@ -62,7 +62,7 @@ var detectValue = (value) => {
     }}
 }
 
-function Chaos({ }) {
+function Sassquatch({ }) {
 
   
 const [hits,setHits] = useState(0);
@@ -81,8 +81,8 @@ var dropValue = (value) => {
 var replay = () => {setHits(0);shuffle(nums);weakpoints = twoSum(nums,target); }
 
   return (
-    // <div className={styles.chaosglobal}>
-        <main className={styles.gridwrap}>
+    <div className={styles.sassglobal}>
+    <main className={styles.gridwrap}>
       <div className={styles.grid}>
         <span className={styles.span}>Ape Head</span>
       </div>
@@ -105,43 +105,28 @@ var replay = () => {setHits(0);shuffle(nums);weakpoints = twoSum(nums,target); }
         <span className={styles.span}>Big Left Arm</span>
       </div>
     </main>
+    <div className={styles.textdisplay}>
+    <p>
+    {hits < 15? <>
+      The monster received {hits} hits so far ...
+      {/* For the player the index starts at 1 */}
+      <p>Its weak points are {weakpoints[0] +1 } and {weakpoints[1] +1}</p>
+      </>
+      :<>
+        <p>The monster is dead</p>
+        <button content={"replay?"} onClick={() =>replay()}>Replay?</button>
+      </> 
+      }
+    </p>
 
-
-
-
-    //   <div className={styles.chaosgrid}>
-    //     {hits >= 15? <div className={`${styles.chaosend} ${styles.vibrate}`}> <p> - </p> </div> :
-
-    // <>
-    //       {nums.map((post,index) => (
-    //         <Module
-    //         key={index}
-    //         content={post}
-    //         onClick={() => dropValue(index)}
-    //         type="eye"
-    //         />
-          
-       
-
-    //       ))}
-    //       <Module content={twoSum(nums,target)} onClick={() => console.log("Missed Hit")}/>
-    //       </>
-    //     }
-    //   </div>
-      
-    //   {hits < 15? <>
-    //   The monster received {hits} hits so far ...
-    //   {/* For the player the index starts at 1 */}
-    //   <p>Its weak points are {weakpoints[0] +1 } and {weakpoints[1] +1}</p>
-    //   </>
-    //   :<>
-    //     <p>The monster is dead</p>
-    //     <button content={"replay?"} onClick={() =>replay()}>Replay?</button>
-    //   </> 
-    //   }
-    // </div>
-
+    </div>
+    <div className={styles.buttonwrapper}>
+    <button className={styles.wait}>WAIT</button>
+    <button className={styles.attack}>ATTACK</button>
+    <button className={styles.retreat}>RETREAT</button>
+    </div>
+    </div>
   )
 }
 
-export default Chaos
+export default Sassquatch

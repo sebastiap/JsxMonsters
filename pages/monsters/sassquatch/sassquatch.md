@@ -4,6 +4,7 @@
 
 ### CSS Concepts
  * CSS Grid (https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-properties)
+ * Box-shadow (https://egghead.io/lessons/css-create-basic-effects-with-css-box-shadow)
  * Sass (https://sass-lang.com/guide)
  
 ### JS Concepts
@@ -16,6 +17,7 @@
  
 ### Cultural Concepts & References
  * Sasquatch - Another name for Bigfoot, an ape-like creature of North American folklore.
+
 ### Other Concepts
 
 ## Creation Hardships & Solutions

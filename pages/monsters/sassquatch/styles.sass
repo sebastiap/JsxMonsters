@@ -1,3 +1,4 @@
+@use 'partial'
 // Reduced from lesson value to fit embed
 $minWidth: 10rem
 $gridGap: 2rem
@@ -13,21 +14,23 @@ $gridGap: 2rem
   & + .grid 
     margin-top: $gridGap
   
-
-
 .gridwrap 
   padding: $gridGap
 
 .grid:nth-child(2) span 
-  color: purple
+  color: brown
+  box-shadow: inset 5px 5px 8px white
 
+.grid:nth-child(2) span:nth-child(2) 
+  color: brown
+  box-shadow: inset -5px 5px 8px white
 
 .grid:nth-child(3) span 
   color: green
-
 
 .grid:nth-child(4) span 
   color: orangered
 
 
 @import "general"
+@import "secondary.sass"

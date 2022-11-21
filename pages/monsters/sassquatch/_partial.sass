@@ -1,0 +1,31 @@
+$minWidth: 10rem
+$gridGap: 5rem
+
+@mixin button($theme: DARKBlue)
+  background: $theme
+  box-shadow: 0 0 1px rgba($theme, .25)
+  width:100px
+  height:80px
+  color: #fff
+
+.wait
+  @include button
+
+.attack
+  @include button($theme: DarkRed)
+
+.retreat
+  @include button($theme: DarkGreen)
+
+.sassglobal
+  background: black
+
+.textdisplay
+  background: #222
+  color: #fff
+  font-family: "Baloo 2", sans-serif
+  font-size: 1.5rem
+  text-align: center
+  display: flex
+  justify-content: center
+  align-items: center
