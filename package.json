@@ -2,11 +2,10 @@
   "name": "jsxmonsters",
   "version": "0.1.0",
   "private": true,
-  
   "scripts": {
     "dev": "next dev",
     "demo": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -19,6 +18,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "copy-to-clipboard": "^3.3.2",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"

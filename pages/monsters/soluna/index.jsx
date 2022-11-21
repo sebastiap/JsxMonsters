@@ -10,7 +10,7 @@ import {useState} from 'react'
 import Module from '../../common/partModule'
 
 // My own styles
-import styles from "./octopus.module.css";
+import styles from "./soluna.module.css";
 
 
 // Hash Map 

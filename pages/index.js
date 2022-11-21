@@ -36,6 +36,22 @@ export default function Home() {
             </a>
           </Link>
           </div>
+          <div className={styles.card}>
+          <Link href="/monsters/hook"
+          >
+            <a>
+              See The Hook monster.
+            </a>
+          </Link>
+          </div>
+          <div className={styles.card}>
+          <Link href="/monsters/sassquatch"
+          >
+            <a>
+              See The sassquatch.
+            </a>
+          </Link>
+          </div>
         </div>
       </main>
 

@@ -8,14 +8,15 @@ import {useState} from 'react'
 
 // My own Components
 import Module from '../../common/partModule'
+import useCopy from '../../common/useCopy'
 
 // My own styles
-import styles from "./octopus.module.css";
+import styles from "./hook.module.css";
 
 
 // Hash Map 
 // What 2 numbers 
-var originalnums = [2,5,11,15,44,1,7];
+var nums = [2,5,11,15,44,1,7];
 var target = 9
 
 var prevnums = []
@@ -38,34 +39,28 @@ function shuffle(array) {
 
   return array;
 }
-var nums = shuffle(originalnums)
+// var nums = shuffle(originalnums)
 
-var twoSum = function(nums, target) {
-    for(var i=0;i<nums.length;i++){
-       var diff = target - nums[i]
-            if(prevnums.includes(diff)){
-                return [prevnums.indexOf(diff),i]
-        }
-         prevnums[i] =nums[i]
+// var twoSum = function(nums, target) {
+//     for(var i=0;i<nums.length;i++){
+//        var diff = target - nums[i]
+//             if(prevnums.includes(diff)){
+//                 return [prevnums.indexOf(diff),i]
+//         }
+//          prevnums[i] =nums[i]
         
-    }
-    return [-1,-1];
-};
-var weakpoints = twoSum(nums,target);
+//     }
+//     return [-1,-1];
+// };
+var weakpoints = [0,1];
 
-var detectValue = (value) => {
-
-  for (var i=0;i<nums.length;i++) {    
-    if (nums.i === value) {
-      return false;
-    }}
-}
-
-function Chaos({ }) {
-
+function Hook({ }) {
+const [isCopied, handleCopy] = useCopy(3000);
+const [password,setPassword] = useState("1234");
   
 const [hits,setHits] = useState(0);
 const [partStatus,setPartStatus] = useState(["fine"]);
+
 
 var dropValue = (value) => {
   let valuedrop = 1;
@@ -74,14 +69,12 @@ var dropValue = (value) => {
     valuedrop = 2;
   }
   setHits(hits+valuedrop)
-  // console.log(nums.filter(num => num === value));
-  console.log(value,weakpoints,weakpoints[0],valuedrop)
 }
-var replay = () => {setHits(0);shuffle(nums);weakpoints = twoSum(nums,target); }
+var replay = () => {setHits(0); }
 
   return (
-    <div className={styles.chaosglobal}>
-      <div className={styles.chaosgrid}>
+    <div className={styles.hookglobal}>
+      <div className={styles.hookgrid}>
         {hits >= 15? <div className={`${styles.chaosend} ${styles.vibrate}`}> <p> - </p> </div> :
 
     <>
@@ -94,7 +87,7 @@ var replay = () => {setHits(0);shuffle(nums);weakpoints = twoSum(nums,target); }
             </Module>
 
           ))}
-          <Module content={twoSum(nums,target)} onClick={() => console.log("Missed Hit")}/>
+          {/* <Module content={twoSum(nums,target)} onClick={() => console.log("Missed Hit")}/> */}
           </>
         }
       </div>
@@ -109,9 +102,13 @@ var replay = () => {setHits(0);shuffle(nums);weakpoints = twoSum(nums,target); }
         <button content={"replay?"} onClick={() =>replay()}>Replay?</button>
       </> 
       }
+
+      <button onClick={() => handleCopy(password)}>
+      {isCopied ? "YES": "NO"}
+    </button>
     </div>
 
   )
 }
 
-export default Chaos
+export default Hook

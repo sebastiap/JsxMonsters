@@ -5,7 +5,7 @@ display:grid;
 
 .octopusgrid{
     display:grid;
-    grid-template-columns:  repeat(3,1fr);
+    /* grid-template-columns:  repeat(3,1fr); */
     grid-template-areas: "tentacleup tentacleup tentacleup"
     "tentaclerigth eye tentacleleft" 
     "tentacledown tentacledown tentacledown"

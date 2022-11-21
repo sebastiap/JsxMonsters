@@ -15,6 +15,18 @@ Each of the monsters is an individual proyect that allows to use libraries and c
 * Next (https://nextjs.org/docs/getting-started)
 * Next Routing with Pages (https://nextjs.org/docs/routing/introduction)
 
+## Algorithm Structures
+* Hash Table
+* Lists 
+* Pile 
+* Queue
+* Linked lists
+* Tree
+* Binary Tree
+* Binary Search Tree
+* Grafos
+* Heap 
+
 ## Monster
 * Chaos Monster (Ugly Version)
 * Soluna Monster (Planified)
@@ -33,5 +45,5 @@ npm i --save @fortawesome/free-regular-svg-icons
 
 npm i --save @fortawesome/react-fontawesome@latest
 
-
+npm i copy-to-clipboard
 -->

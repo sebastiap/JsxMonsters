@@ -1,0 +1,41 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-gap: 2rem;
+  box-sizing: border-box;
+  font-family: "Baloo 2", sans-serif;
+}
+.grid + .grid {
+  margin-top: 2rem;
+}
+
+.gridwrap {
+  padding: 2rem;
+}
+
+.grid:nth-child(2) span {
+  color: purple;
+}
+
+.grid:nth-child(3) span {
+  color: green;
+}
+
+.grid:nth-child(4) span {
+  color: orangered;
+}
+
+.span {
+  border: 2px dashed currentcolor;
+  border-radius: 4px;
+  min-height: 15vh;
+  padding: 1rem;
+  color: #0178d4;
+  font-size: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=sassquatch.module.css.map */
