@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "demo": "next dev",
+    "sass": "sass --watch pages/monsters/sassquatch/styles.sass pages/monsters/sassquatch/sassquatch.module.css",
+    "demo": "start npm run sass && start next dev",
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"

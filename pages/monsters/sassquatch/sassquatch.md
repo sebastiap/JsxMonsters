@@ -15,7 +15,7 @@
 ### Algorithm Concepts
  
 ### Cultural Concepts & References
-
+ * Sasquatch - Another name for Bigfoot, an ape-like creature of North American folklore.
 ### Other Concepts
 
 ## Creation Hardships & Solutions
@@ -29,3 +29,10 @@ I wanted to use Sass for this one.
 Sass has two syntaxes.The SCSS syntax (.scss) is used most commonly.
  * Sass is more like python , using only indentation.
  * Scss is more like vanilla css.
+
+### Running Sass in a script with Next
+I had to modify the script "npm run demo" to run both commands (Sass and Next). I also had to :
+ * Run the sass command with relative path.
+ * Made a separate command to run Sass (for better reading).
+ * Add "start" at each command to run in a separate prompt.
+
