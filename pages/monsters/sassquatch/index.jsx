@@ -81,7 +81,7 @@ var dropValue = (value) => {
 var replay = () => {setHits(0);shuffle(nums);weakpoints = twoSum(nums,target); }
 
   return (
-    <div className={styles.sassglobal}>
+    <div className={styles.mathclass}>
     <main className={styles.gridwrap}>
       <div className={styles.grid}>
         <span className={styles.span}>Ape Head</span>
@@ -105,7 +105,11 @@ var replay = () => {setHits(0);shuffle(nums);weakpoints = twoSum(nums,target); }
         <span className={styles.span}>Big Left Arm</span>
       </div>
     </main>
+    <div className={styles.specialdisplay}>
+    <p>WARNING!</p>
+    </div>
     <div className={styles.textdisplay}>
+
     <p>
     {hits < 15? <>
       The monster received {hits} hits so far ...

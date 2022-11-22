@@ -1,24 +1,24 @@
 .wait {
   background: DARKBlue;
   box-shadow: 0 0 1px rgba(0, 0, 139, 0.25);
-  width: 100px;
-  height: 80px;
+  width: 62.5%;
+  height: 100px;
   color: #fff;
 }
 
 .attack {
   background: DarkRed;
   box-shadow: 0 0 1px rgba(139, 0, 0, 0.25);
-  width: 100px;
-  height: 80px;
+  width: 62.5%;
+  height: 100px;
   color: #fff;
 }
 
 .retreat {
   background: DarkGreen;
   box-shadow: 0 0 1px rgba(0, 100, 0, 0.25);
-  width: 100px;
-  height: 80px;
+  width: 62.5%;
+  height: 100px;
   color: #fff;
 }
 
@@ -26,7 +26,7 @@
   background: black;
 }
 
-.textdisplay {
+.specialdisplay, .textdisplay {
   background: #222;
   color: #fff;
   font-family: "Baloo 2", sans-serif;
@@ -35,6 +35,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.specialdisplay {
+  color: #FFC000;
+  font-size: 2rem;
 }
 
 .grid {
@@ -101,7 +106,7 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
