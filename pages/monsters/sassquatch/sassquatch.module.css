@@ -42,6 +42,78 @@
   font-size: 2rem;
 }
 
+.gallery {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.gallery li {
+  flex: 1 1 35rem;
+  min-height: 10vh;
+  max-height: 25vh;
+}
+
+.gallery li img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  transition: 120ms opacity;
+}
+.gallery li img:hover {
+  opacity: 1;
+}
+
+.wait {
+  background: DARKBlue;
+  box-shadow: 0 0 1px rgba(0, 0, 139, 0.25);
+  width: 62.5%;
+  height: 100px;
+  color: #fff;
+}
+
+.attack {
+  background: DarkRed;
+  box-shadow: 0 0 1px rgba(139, 0, 0, 0.25);
+  width: 62.5%;
+  height: 100px;
+  color: #fff;
+}
+
+.retreat {
+  background: DarkGreen;
+  box-shadow: 0 0 1px rgba(0, 100, 0, 0.25);
+  width: 62.5%;
+  height: 100px;
+  color: #fff;
+}
+
+.sassglobal {
+  background: black;
+}
+
+.specialdisplay, .textdisplay {
+  background: #222;
+  color: #fff;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.specialdisplay {
+  color: #FFC000;
+  font-size: 2rem;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -78,7 +150,7 @@
 .span {
   border: 2px dashed currentcolor;
   border-radius: 4px;
-  min-height: 15vh;
+  min-height: 10vh;
   padding: 1rem;
   color: white;
   font-size: 3rem;
@@ -91,7 +163,6 @@
 .span:hover {
   border: 2px solid violet;
   border-radius: 4px;
-  min-height: 15vh;
   padding: 1rem;
   color: violet;
   font-size: 3rem;
@@ -106,7 +177,7 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 

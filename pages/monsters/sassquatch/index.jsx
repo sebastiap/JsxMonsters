@@ -7,7 +7,8 @@ import {useState} from 'react'
 
 
 // My own Components
-import Module from '../../common/partModule'
+import Photo from './photo'
+import Vats from './vats'
 
 // My own styles
 import styles from "./sassquatch.module.css";
@@ -54,83 +55,49 @@ var twoSum = function(nums, target) {
 };
 var weakpoints = twoSum(nums,target);
 
-var detectValue = (value) => {
-
-  for (var i=0;i<nums.length;i++) {    
-    if (nums.i === value) {
-      return false;
-    }}
-}
-
 function Sassquatch({ }) {
 
   
 const [hits,setHits] = useState(0);
-const [partStatus,setPartStatus] = useState(["fine"]);
+const [vatsmode,setvatsMode] = useState(false)
 
-var dropValue = (value) => {
-  let valuedrop = 1;
-  // the index starts at 0
-  if (value === weakpoints[0] || value === weakpoints[1]  ){
-    valuedrop = 2;
-  }
-  setHits(hits+valuedrop)
-  // console.log(nums.filter(num => num === value));
-  console.log(value,weakpoints,weakpoints[0],valuedrop)
-}
 var replay = () => {setHits(0);shuffle(nums);weakpoints = twoSum(nums,target); }
 
   return (
-    <div className={styles.mathclass}>
-    <main className={styles.gridwrap}>
-      <div className={styles.grid}>
-        <span className={styles.span}>Ape Head</span>
-      </div>
-
-      <div className={styles.grid}>
-        <span className={styles.span}>Hairy Shoulder</span>
-        <span className={styles.span}>Hairy Shoulder</span>
-      </div>
-
-      <div className={styles.grid}>
-        <span className={styles.span}>Big Pectoral</span>
-        <span className={styles.span}>Big Belly</span>
-        <span className={styles.span}>Big Pectoral</span>
-      </div>
-
-      <div className={styles.grid}>
-        <span className={styles.span}>Big Right Arm</span>
-        <span className={styles.span}>Big Right Foot</span>
-        <span className={styles.span}>Big Left Foot</span>
-        <span className={styles.span}>Big Left Arm</span>
-      </div>
-    </main>
-    <div className={styles.specialdisplay}>
+    <>
+      {vatsmode? <Vats/>: <Photo/>
+      }
+      <div className={styles.specialdisplay}>
     <p>WARNING!</p>
     </div>
     <div className={styles.textdisplay}>
-
-    <p>
-    {hits < 15? <>
-      The monster received {hits} hits so far ...
-      {/* For the player the index starts at 1 */}
-      <p>Its weak points are {weakpoints[0] +1 } and {weakpoints[1] +1}</p>
-      </>
-      :<>
-        <p>The monster is dead</p>
-        <button content={"replay?"} onClick={() =>replay()}>Replay?</button>
-      </> 
-      }
-    </p>
-
+      {vatsmode? 
+      <p>
+      <p>Monster Detected </p> 
+      <p>Prepare for Battle </p> 
+      </p>
+      : 
+      <p>
+      {hits < 15? <>
+          The monster received {hits} hits so far ...
+          {/* For the player the index starts at 1 */}
+          <p>Its weak points are {weakpoints[0] +1 } and {weakpoints[1] +1}</p>
+        </>
+        :<>
+          <p>The monster is dead</p>
+          <button content={"replay?"} onClick={() =>replay()}>Replay?</button>
+        </> 
+        }
+      </p>
+    }
     </div>
     <div className={styles.buttonwrapper}>
-    <button className={styles.wait}>WAIT</button>
-    <button className={styles.attack}>ATTACK</button>
-    <button className={styles.retreat}>RETREAT</button>
+      <button onClick={() => setvatsMode(false)} className={styles.wait}>WAIT</button>
+      <button onClick={() => setvatsMode(true)}className={styles.attack}>ATTACK</button>
+      <Link href="/"><button className={styles.retreat}>RETREAT</button></Link>
     </div>
-    </div>
+    </>
   )
 }
 
-export default Sassquatch
+export default Sassquatch;

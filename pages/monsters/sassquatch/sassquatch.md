@@ -5,7 +5,9 @@
 ### CSS Concepts
  * CSS Grid (https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-properties)
  * Box-shadow (https://egghead.io/lessons/css-create-basic-effects-with-css-box-shadow)
+ * Object-fit  (An element adjust to the size of its father https://egghead.io/lessons/flexbox-create-an-automatically-responsive-flexbox-gallery)
  * Sass (https://sass-lang.com/guide)
+
  
 ### JS Concepts
  * Map 
