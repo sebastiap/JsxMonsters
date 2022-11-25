@@ -29,8 +29,9 @@ Each of the monsters is an individual proyect that allows to use libraries and c
 
 ## Monster
 * Chaos Monster (Ugly Version)
+* Sassquatch Monster (Css almost finished Version)
+* Octopus Monster (first CSS draft Version)
 * Soluna Monster (Planified)
-* Octopus Monster (Planified)
 * Hook Monster (Planified)
 
 

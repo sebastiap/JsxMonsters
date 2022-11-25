@@ -72,10 +72,10 @@ var replay = () => {setHits(0);shuffle(nums);weakpoints = twoSum(nums,target); }
     </div>
     <div className={styles.textdisplay}>
       {vatsmode? 
-      <p>
+      <div>
       <p>Monster Detected </p> 
       <p>Prepare for Battle </p> 
-      </p>
+      </div>
       : 
       <p>
       {hits < 15? <>

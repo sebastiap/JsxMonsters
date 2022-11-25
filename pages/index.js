@@ -6,8 +6,9 @@ import Link from 'next/link'
 export default function Home() {
 
 var monsters = ["chaos","octopus","hook","sassquatch"];
-var randomMonster = monster[math.random()]*monsters.length;
-console.log(randomMonster);
+// getting a random item from an array of monsters
+var randomMonster = monsters[Math.floor(Math.random() * monsters.length)];
+
   return (
     <div className={styles.container}>
       <Head>
@@ -57,7 +58,7 @@ console.log(randomMonster);
           </Link>
           </div>
           <div className={styles.card}>
-          <Link href={"/monsters/"}
+          <Link href={"/monsters/" + randomMonster}
           >
             <a>
               Show me a random monster
