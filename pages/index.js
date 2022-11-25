@@ -4,6 +4,10 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
 export default function Home() {
+
+var monsters = ["chaos","octopus","hook","sassquatch"];
+var randomMonster = monster[math.random()]*monsters.length;
+console.log(randomMonster);
   return (
     <div className={styles.container}>
       <Head>
@@ -49,6 +53,14 @@ export default function Home() {
           >
             <a>
               See The sassquatch.
+            </a>
+          </Link>
+          </div>
+          <div className={styles.card}>
+          <Link href={"/monsters/"}
+          >
+            <a>
+              Show me a random monster
             </a>
           </Link>
           </div>

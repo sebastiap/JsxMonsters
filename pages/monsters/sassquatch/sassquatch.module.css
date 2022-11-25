@@ -66,6 +66,7 @@
   opacity: 0.5;
   transition: 120ms opacity;
 }
+
 .gallery li img:hover {
   opacity: 1;
 }
