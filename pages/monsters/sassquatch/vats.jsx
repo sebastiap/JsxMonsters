@@ -30,9 +30,15 @@ var replay = () => {setHits(0);shuffle(nums);weakpoints = twoSum(nums,target); }
 
       <div className={styles.grid}>
         <span className={styles.span}>Big Right Arm</span>
+        <span className={styles.span}>Big Right Knee</span>
+        <span className={styles.span}>Big Left Knee</span>
+        <span className={styles.span}>Big Left Arm</span>
+      </div>
+      <div className={styles.grid}>
+        <span className={styles.span}>Big Right Hand</span>
         <span className={styles.span}>Big Right Foot</span>
         <span className={styles.span}>Big Left Foot</span>
-        <span className={styles.span}>Big Left Arm</span>
+        <span className={styles.span}>Big Left Hand</span>
       </div>
     </main>
     </div>
