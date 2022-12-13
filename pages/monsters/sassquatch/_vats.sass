@@ -1,6 +1,8 @@
 // Reduced from lesson value to fit embed
 $minWidth: 10rem
 $gridGap: 2rem
+$feetcolor: #C2BEAC
+$armcolor: #9B7A01
 
 .grid 
   display: grid
@@ -20,7 +22,7 @@ $gridGap: 2rem
   color: brown
   margin-left: 40%
   margin-right: 40%
-  box-shadow: inset 5px 5px 8px brown,inset -5px 5px 8px brown,
+  box-shadow: inset 5px 5px 8px brown,inset -5px 5px 8px brown
 
 .grid:nth-child(2) span 
   color: brown
@@ -37,28 +39,40 @@ $gridGap: 2rem
   box-shadow: inset -5px 5px 8px white
 
 .grid:nth-child(3) span 
-  color: green
+  color: white
 
 .grid:nth-child(4) span 
   color: orangered
   margin-left: 25%
   margin-right: 25%
-  
-.grid:nth-child(5)
-  color: brown
+  box-shadow: inset 5px 5px 8px brown,inset -5px 5px 8px brown, inset 5px -5px 8px brown,inset -5px -5px 8px brown
+  border-radius:5%
 
 .grid:nth-child(5) span:nth-child(1)
   margin-left: 12.5%
+  color: orangered
 
 .grid:nth-child(5) span:nth-child(4)
   margin-right: 12.5%
+  color: orangered
 
 .grid:nth-child(6) span:nth-child(1) ,  .grid:nth-child(6) span:nth-child(4),
 .grid:nth-child(5) span:nth-child(3) ,  .grid:nth-child(5) span:nth-child(2)
   margin-left: 12.5%
   margin-right: 12.5%
+  color: $armcolor
+
+.grid:nth-child(6) span:nth-child(1) ,  .grid:nth-child(6) span:nth-child(4)
+  color: brown
+  box-shadow: inset 5px -5px 8px brown,inset -5px -5px 8px brown
 
 .grid:nth-child(6) span:nth-child(3) 
   margin-left: 12.5%
+  color: $feetcolor
+
 .grid:nth-child(6) span:nth-child(2)
   margin-right: 12.5%
+  color:$feetcolor
+
+
+  

@@ -18,7 +18,7 @@ const [animated, setAnimated] = useState(false);
 
 var contenido = [];
 if (props.content != undefined) { for (var i = 0; i < props.content; i++) {
-  contenido.push(<FontAwesomeIcon style={{fontSize:"15px"}} icon={faEye} />)
+  contenido.push(<FontAwesomeIcon style={{fontSize:"10px"}} icon={faEye} />)
         }
         }
 
@@ -29,7 +29,7 @@ if (props.content != undefined) { for (var i = 0; i < props.content; i++) {
     onAnimationEnd={() => setAnimated(() => false)}
     >
 
-    {props.type === "eye" ?<FontAwesomeIcon icon={faEye} />: props.content }
+    {props.type === "eye" ?<FontAwesomeIcon style={{height:"300px"}}  icon={faEye} />: props.content }
       
       {/* {contenido.map(ojo => ojo)} */}
       {/* <FontAwesomeIcon icon={faEye} /> */}
